@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<title>Rock, Paper, Scissors, Lizard, Spock Game</title>
+		<link href="" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">The Rock, Paper, Scissors, Lizard, Spock Game!</h1>
+            <div>
+                <p id="intro">The first player to reach 5 points wins the game</p>
+            </div>
+            <div>
+                <p id="motivation">Try to defeat the AI! It's gonna be pissed off if it loses!</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-board">
+                <img id="board-image" src="images/game-picture.png">
+                <button id="rock" class="buttons" type="button"></button>
+                <button id="paper" class="buttons" type="button"></button>
+                <button id="scissors" class="buttons" type="button"></button>
+                <button id="lizard" class="buttons" type="button"></button>
+                <button id="spock" class="buttons" type="button"></button>
+            </div>
+            <div class="instructions">
+                <h2 id="rule-title">What beats what?</h2>
+                <p id="rules">Rock crushes Lizard<br />
+                    Rock crushes Scissors<br />
+                    Paper covers Rock<br />
+                    Paper Disproves Spock<br />
+                    Scissors cuts Paper<br />
+                    Scissors decapitates Lizard<br />
+                    Lizard eats Paper<br />
+                    Lizard poisons Spock<br />
+                    Spock smashes Scissors<br />
+                    Spock vaporizes Rock
+                </p>
+            </div>
+            <div class="score">
+                <p id="player-score">Player Score: </p>
+                <p id="ai-core">AI Score: </p>
+            </div>
+            <div class="results">
+                <p id="game-message"></p>
+            </div>
+        </main>
+    </body>
+</html>
