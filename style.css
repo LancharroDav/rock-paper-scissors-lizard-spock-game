@@ -2,8 +2,41 @@
 GLOBAL CLASSES
 -------------------------------------------------*/
 
+*::-moz-focus-inner {
+    border: 0;
+}
+
+* {
+    font-family: "Ultra";
+}
+
 body {
-    background-color: skyblue;
+    background-color: wheat;
+}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+#title {
+    font-size: 55px;
+}
+
+#intro {
+    float: inline-start;
+    margin-left: 100px;
+    font-size: 23px;
+}
+
+#motivation {
+    float: inline-end;
+    margin-right: 100px;
+    font-size: 23px;
 }
 
 /*-------------------------------------------------
@@ -12,37 +45,40 @@ GAME BOARD CLASSES
 
 .game-board {
     position: relative;
-    left: 200px;
+    float: left;
+    top: 0px;
+    left: 100px;
 }
 
 #board-image {
+    position: relative;
     width: 600px;
 }
 
 .buttons {
     position: absolute;
-    width: 170px;
+    width: 175px;
     height: 175px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 10px 7px #666;
-    transition-duration: 0.2s;
+    transition: none;
 }
 
 .buttons:focus {
+    outline: 0;
     border: none;
 }
 
 .buttons:active {
-    border: 8px solid black;
     box-shadow: 0 5px 3px #666;
     transform: translateY(3px);
 }
 #rock {
     top: 390px;
-    left: 336px;
+    left: 335px;
     background-color: transparent;
-    border: 5px solid red;
+    border: 7px solid red;
     border-color: red;
 }
 
@@ -52,9 +88,9 @@ GAME BOARD CLASSES
 
 #paper {
     top: 161px;
-    left: 404px;
+    left: 403px;
     background-color: transparent;
-    border: 5px solid yellow ;
+    border: 7px solid yellow ;
     border-color: yellow
 }
 
@@ -64,9 +100,9 @@ GAME BOARD CLASSES
 
 #scissors {
     top: 27px;
-    left: 210px;
+    left: 209px;
     background-color: transparent;
-    border: 5px solid blueviolet;
+    border: 7px solid blueviolet;
     border-color: blueviolet;
 }
 
@@ -76,9 +112,9 @@ GAME BOARD CLASSES
 
 #lizard {
     top: 395px;
-    left: 100px;
+    left: 99px;
     background-color: transparent;
-    border: 5px solid green;
+    border: 7px solid green;
     border-color: green;
 }
 
@@ -88,9 +124,9 @@ GAME BOARD CLASSES
 
 #spock {
     top: 166px;
-    left: 25px;
+    left: 24px;
     background-color: transparent;
-    border: 5px solid blue;
+    border: 7px solid blue;
     border-color:blue;
 }
 
@@ -105,16 +141,49 @@ INSTRUCTIONS CLASSES
 
 .instructions {
     position: relative;
-    right: 200px;
+    float: inline-end;
+    right: 160px;
+    bottom: 35px;
 }
 
+#rule-title {
+    font-size: 55px;
+}
+
+.rules {
+    position: relative;
+    bottom: 30px;
+    font-size: 27px;
+    text-align: center;    
+}
+
+#rock-rules {
+    background-color: red;
+    border-radius: 50%;
+}
+
+#paper-rules {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#scissors-rules {
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+#lizard-rules {
+    background-color: green;
+    border-radius: 50%;
+}
+
+#spock-rules {
+    background-color: blue;
+    border-radius: 50%;
+}
 /*-------------------------------------------------
 SCORE CLASSES
 -------------------------------------------------*/
-
 .score {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: center;
+    display: none;
 }
