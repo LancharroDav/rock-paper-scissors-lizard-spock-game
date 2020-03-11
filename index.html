@@ -6,7 +6,7 @@
 		<link href="" />
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Ultra&display=swap" rel="stylesheet">
-
+        <script type="text/javascript" src="script.js"></script>
     <body>
         <header>
             <h1 id="title">The Rock, Paper, Scissors, Lizard, Spock Game!</h1>
@@ -22,11 +22,11 @@
             <div class="column">
                 <div class="game-board">
                     <img id="board-image" src="images/game-picture.png">
-                    <button id="rock" class="buttons" type="button"></button>
-                    <button id="paper" class="buttons" type="button"></button>
-                    <button id="scissors" class="buttons" type="button"></button>
-                    <button id="lizard" class="buttons" type="button"></button>
-                    <button id="spock" class="buttons" type="button"></button>
+                    <button id="rock" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
+                    <button id="paper" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
+                    <button id="scissors" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
+                    <button id="lizard" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
+                    <button id="spock" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
                 </div>
             </div>
             <div class="column">
@@ -53,10 +53,8 @@
                 <p id="ai-core">AI Score: 0</p>
             </div>
             <div class="results">
-                <p id="game-message"></p>
+                <p id="gameMessage"></p>
             </div>
         </div>
-        <p>console.log(game())</p>
-        <script src="./script.js"></script>
     </body>
 </html>

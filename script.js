@@ -1,12 +1,21 @@
-function computerPlay() {
-    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    return computerChoice
+let playerChoice = playerPlay()
+let computerChoice = computerPlay()
+
+
+function playerPlay(clicked_id) {
+    return clicked_id
+    
 }
 
-function playRound() {
-    let playerSelection =  playerPlay();
-    let computerSelection = computerPlay();
+function computerPlay() {
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    return choices[Math.floor(Math.random() * choices.length)];
+    
+}
+
+function playRound(playerChoice, computerChoice) {
+    let playerSelection =  playerChoice;
+    let computerSelection = computerChoice;
 
     if (computerSelection == playerSelection) {
         return "Draw! You've both chosen ${playerSelection}! Try again!!"
@@ -28,12 +37,7 @@ function playRound() {
     }
 }
 
-function playerPlay() {
-    let playerChoice = Array.from(document.querySelectorAll("button"));
-    return playerChoice
-}
-
 function game() {
     let playGame = playRound()
-    alert playGame
+    document.getElementById("gameMessage").innerHTML = playGame
 }
