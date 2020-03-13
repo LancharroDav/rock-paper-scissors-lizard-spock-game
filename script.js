@@ -55,14 +55,3 @@ function playerPlay() {
     document.getElementById("gameMessage").innerHTML = playRound()
 }
 
-
-
-
-
-function game() {
-    document.getElementById("gameMessage").innerHTML = playerPlay()
-}
-
-// function score(round) {
-    
-// }
