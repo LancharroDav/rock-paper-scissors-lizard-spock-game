@@ -14,7 +14,11 @@
                 <p id="intro">The first player to reach 5 points wins the game</p>
             </div>
             <div>
-                <p id="motivation">Try to defeat the AI! It's gonna be pissed off if it loses!</p>
+                <p id="motivation">Try to defeat the A.I.! It's gonna be pissed off if it loses!</p>
+
+            </div>
+            <div class="results">
+                <p id="gameMessage"> </p>
             </div>
         </header>
 
@@ -22,11 +26,17 @@
             <div class="column">
                 <div class="game-board">
                     <img id="board-image" src="images/game-picture.png">
-                    <button id="rock" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
-                    <button id="paper" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
-                    <button id="scissors" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
-                    <button id="lizard" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
-                    <button id="spock" class="buttons" type="button" onclick="playerPlay(this.id)"></button>
+                    <button id="rock" class="buttons" type="button"></button>
+                    <button id="paper" class="buttons" type="button"></button>
+                    <button id="scissors" class="buttons" type="button"></button>
+                    <button id="lizard" class="buttons" type="button"></button>
+                    <button id="spock" class="buttons" type="button"></button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="score">
+                    <p id="player-score">Player Score: 0</p>
+                    <p id="ai-core">AI Score: 0</p>
                 </div>
             </div>
             <div class="column">
@@ -45,16 +55,10 @@
                         Spock vaporizes Rock</p>
                     </div>
                 </div>
-            </div>            
+            </div>           
         </main>
         <div>
-            <div class="score">
-                <p id="player-score">Player Score: 0</p>
-                <p id="ai-core">AI Score: 0</p>
-            </div>
-            <div class="results">
-                <p id="gameMessage"></p>
-            </div>
+            
         </div>
     </body>
 </html>

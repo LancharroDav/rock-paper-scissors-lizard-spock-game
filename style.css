@@ -8,7 +8,7 @@ GLOBAL CLASSES
 
 * {
     box-sizing: border-box;
-    font-family: "Ultra";
+    font-family: "Cabin Sketch";
 }
 
 header {
@@ -49,13 +49,18 @@ HEADER CLASSES
     font-size: 23px;
 }
 
+#gameMessage {
+    font-size: 30px;
+}
+
 /*-------------------------------------------------
 GAME BOARD CLASSES
 -------------------------------------------------*/
 
 .game-board {
     position: relative;
-    left: 150px;
+    left: 40px;
+    top: 20px
 }
 
 #board-image {
@@ -194,8 +199,12 @@ INSTRUCTIONS CLASSES
 SCORE CLASSES
 -------------------------------------------------*/
 .score {
-    font-size: 20px;
+    font-size: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     text-align: center;
+    margin-top: 200px;
 }
 
 @media (max-width: 1500px) {
