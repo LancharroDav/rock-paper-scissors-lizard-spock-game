@@ -1,6 +1,3 @@
-// let playerChoice = ''
-// let computerChoice = 
-let round = ''
 let playerScore = 0
 let computerScore = 0
 const capitalize = (s) => {
@@ -20,8 +17,13 @@ document.getElementById("spock").addEventListener('click', playerPlay)
 
 }, false);
 
+
+
+
 function playerPlay() {
     let playerChoice = capitalize(this.id)
+    // let playerScore = document.getElementById("player-score").innerHTML = 0
+    // let computerScore = document.getElementById("ai-score").innerHTML = 0
     
     function computerPlay() {
         const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
@@ -30,28 +32,63 @@ function playerPlay() {
     let computerChoice = capitalize(computerPlay())
 
     function playRound() {
-        const draw = "Draw! You've both chosen " + playerChoice + "! Try again!!"
-        const win = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"
-        const loose = "Loser! " + computerChoice + " will always beat " + playerChoice + "!! A.I. will always be smarter than a mere human!"
+        // const draw = document.getElementById("gameMessage").innerHTML = "Draw! You've both chosen " + playerChoice + "! Try again!!"
+        // const win = document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"
+        // const loose = document.getElementById("gameMessage").innerHTML = "Loser! " + computerChoice + " will always beat " + playerChoice + "!! A.I. will always be smarter than a mere human!"
 
-        if (computerChoice === playerChoice) return draw;
-        if (playerChoice == 'Rock' && computerChoice == 'Lizard') return win;
-        if (playerChoice == 'Rock' && computerChoice == 'Scissors') return win;
-        if (playerChoice == 'Paper' && computerChoice == 'Rock') return win;
-        if (playerChoice == 'Paper' && computerChoice == 'Spock') return win;
-        if (playerChoice == 'Scissors' && computerChoice == 'Paper') return win;
-        if (playerChoice == 'Scissors' && computerChoice == 'Lizard') return win;
-        if (playerChoice == 'Lizard' && computerChoice == 'Paper') return win;
-        if (playerChoice == 'Lizard' && computerChoice == 'Spock') return win;
-        if (playerChoice == 'Spock' && computerChoice == 'Scissors') return win;
-        if (playerChoice == 'Spock' && computerChoice == 'Rock') return win;
+        if (computerChoice === playerChoice) {
+            return document.getElementById("gameMessage").innerHTML = "Draw! You've both chosen " + playerChoice + "! Try again!!"}
+
+        if (playerChoice == 'Rock' && computerChoice == 'Lizard') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Rock' && computerChoice == 'Scissors') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Paper' && computerChoice == 'Rock') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Paper' && computerChoice == 'Spock') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Scissors' && computerChoice == 'Paper') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Scissors' && computerChoice == 'Lizard') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Lizard' && computerChoice == 'Paper') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Lizard' && computerChoice == 'Spock') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Spock' && computerChoice == 'Scissors') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
+        if (playerChoice == 'Spock' && computerChoice == 'Rock') {
+            playerScore = document.getElementById("player-score").innerHTML = ++playerScore
+            return document.getElementById("gameMessage").innerHTML = "You win! " + playerChoice + " will always beat " + computerChoice + "!! You lucky!"}
+
         else {
-            return loose
-        }
+            computerScore = document.getElementById("ai-score").innerHTML = ++computerScore
+            return document.getElementById("gameMessage").innerHTML = "Loser! " + computerChoice + " will always beat " + playerChoice + "!! A.I. will always be smarter than a mere human!"}
+    
     }
+    
     console.log(playerChoice)
     console.log(computerChoice)
     console.log(playRound())
-    document.getElementById("gameMessage").innerHTML = playRound()
+
 }
+
 

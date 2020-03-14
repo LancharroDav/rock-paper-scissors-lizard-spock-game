@@ -47,6 +47,7 @@ HEADER CLASSES
 
 #motivation {
     font-size: 23px;
+    text-decoration: underline;
 }
 
 #gameMessage {
@@ -199,13 +200,12 @@ INSTRUCTIONS CLASSES
 SCORE CLASSES
 -------------------------------------------------*/
 .score {
-    font-size: 50px;
+    font-size: 40px;
     font: bold;
     display: grid;
     align-items: center;
     justify-items: center;
     text-align: center;
-    margin-top: 150px;
 }
 
 @media (max-width: 1500px) {
