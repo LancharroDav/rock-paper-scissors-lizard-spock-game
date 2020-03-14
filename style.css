@@ -76,6 +76,7 @@ GAME BOARD CLASSES
     cursor: pointer;
     box-shadow: 0 10px 7px #666;
     transition: none;
+    background: transparent;
 }
 
 .buttons:focus {
@@ -96,7 +97,7 @@ GAME BOARD CLASSES
 }
 
 #rock:hover {
-    background-color: rgba(255, 0, 0, 0.219);
+    background-color: rgba(255, 0, 0, 0.219) !important;
 }
 
 #paper {
@@ -108,7 +109,7 @@ GAME BOARD CLASSES
 }
 
 #paper:hover {
-    background-color: rgba(255, 255, 0, 0.24);
+    background-color: rgba(255, 255, 0, 0.24) !important;
 }
 
 #scissors {
@@ -120,7 +121,7 @@ GAME BOARD CLASSES
 }
 
 #scissors:hover {
-    background-color: rgba(137, 43, 226, 0.212);
+    background-color: rgba(137, 43, 226, 0.212) !important;
 }
 
 #lizard {
@@ -132,7 +133,7 @@ GAME BOARD CLASSES
 }
 
 #lizard:hover {
-    background-color: rgba(0, 128, 0, 0.225);
+    background-color: rgba(0, 128, 0, 0.225) !important;
 }
 
 #spock {
@@ -144,7 +145,7 @@ GAME BOARD CLASSES
 }
 
 #spock:hover {
-    background-color: rgba(0, 0, 255, 0.199);
+    background-color: rgba(0, 0, 255, 0.199) !important;
 }
 
 
