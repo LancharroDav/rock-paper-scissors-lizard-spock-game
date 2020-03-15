@@ -87,6 +87,7 @@ GAME BOARD CLASSES
 .buttons:active {
     box-shadow: 0 5px 3px #666;
     transform: translateY(3px);
+    /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
 }
 #rock {
     top: 390px;
@@ -94,6 +95,7 @@ GAME BOARD CLASSES
     background-color: transparent;
     border: 7px solid red;
     border-color: red;
+    
 }
 
 #rock:hover {

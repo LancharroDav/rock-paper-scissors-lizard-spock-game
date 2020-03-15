@@ -34,6 +34,7 @@ function playerPlay() {
         const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
         return computer = choices[Math.floor(Math.random() * choices.length)]     
     }
+    
     let elem = document.getElementById(computerPlay())
     elem.style.backgroundColor = 'rgba(231, 151, 3, 0.685)' // need to be reset after each choice
     let computerChoice = capitalize(computer)
