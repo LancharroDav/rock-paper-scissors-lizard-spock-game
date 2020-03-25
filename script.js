@@ -14,7 +14,7 @@ document.getElementById("paper").addEventListener('click', playerPlay)
 document.getElementById("scissors").addEventListener('click', playerPlay)
 document.getElementById("lizard").addEventListener('click', playerPlay)
 document.getElementById("spock").addEventListener('click', playerPlay)
-
+document.getElementById("reset").addEventListener('click', reset)
 }, false);
 
 
@@ -97,6 +97,13 @@ function playerPlay() {
     console.log(computerChoice)
     console.log(playRound())
 
+}
+
+function reset() {
+    playerScore = document.getElementById("player-score").innerHTML = 0
+    computerScore = document.getElementById("ai-score").innerHTML = 0
+
+    console.log("SCORE RESTARTED!")
 }
 
 

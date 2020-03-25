@@ -211,6 +211,27 @@ SCORE CLASSES
     text-align: center;
 }
 
+#reset {
+    width: 275px;
+    height: 75px;
+    background-color: rgba(243, 136, 157, 0.979);
+    font-size: 25px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 7px #666;
+    transition: none;
+}
+
+#reset:focus {
+    outline: 0;
+    border: 0;
+}
+
+#reset:active {
+    box-shadow: 0 5px 3px #666;
+    transform: translateY(3px);
+}
 @media (max-width: 1500px) {
     .row {
       -webkit-flex-direction: column;
