@@ -111,7 +111,7 @@ GAME BOARD CLASSES
 }
 
 #paper:hover {
-    background-color: rgba(255, 255, 0, 0.24) !important;
+    background-color: rgba(255, 255, 0, 0.37) !important;
 }
 
 #scissors {
@@ -176,28 +176,28 @@ INSTRUCTIONS CLASSES
 }
 
 #rock-rules {
-    background-color: rgba(255, 0, 0, 0.651);
-    border-radius: 50%;
+    border: 5px solid rgba(255, 0, 0, 0.651);
+    background-color: rgba(255, 0, 0, 0.37)
 }
 
 #paper-rules {
-    background-color: rgba(255, 255, 0, 0.658);
-    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 0, 0.658);
+    background-color: rgba(255, 255, 0, 0.37);
 }
 
 #scissors-rules {
-    background-color: rgba(137, 43, 226, 0.637);
-    border-radius: 50%;
+    border: 5px solid rgba(137, 43, 226, 0.637);
+    background-color: rgba(137, 43, 226, 0.37);
 }
 
 #lizard-rules {
-    background-color: rgba(0, 128, 0, 0.678);
-    border-radius: 50%;
+    border: 5px solid rgba(0, 128, 0, 0.678);
+    background-color: rgba(0, 128, 0, 0.37);
 }
 
 #spock-rules {
-    background-color: rgba(0, 0, 255, 0.671);
-    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 255, 0.671);
+    background-color: rgba(0, 0, 255, 0.199);
 }
 /*-------------------------------------------------
 SCORE CLASSES
